@@ -1,0 +1,8 @@
+- id: check-ssh-agent-keys
+  name: Check SSH Agent Keys for Commit Signing
+  description: Ensures SSH keys are loaded in agent before signing commits. Prompts to unlock KeePassXC if needed.
+  entry: check-ssh-keys.sh
+  language: script
+  stages: [commit]
+  pass_filenames: false
+  always_run: true

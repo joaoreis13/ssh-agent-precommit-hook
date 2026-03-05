@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/joaoreis13/ssh-agent-precommit-hook
+    rev: v1.0.0
+    hooks:
+      - id: check-ssh-agent-keys

@@ -1,0 +1,20 @@
+# Example pre-commit configuration file
+# Copy this to your repository as .pre-commit-config.yaml
+
+repos:
+  # SSH Agent Check Hook
+  - repo: https://github.com/joaoreis13/ssh-agent-precommit-hook
+    rev: v1.0.0  # Use the latest version tag
+    hooks:
+      - id: check-ssh-agent-keys
+
+  # Standard pre-commit hooks (optional)
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: mixed-line-ending
